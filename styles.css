@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-weight: 400;
+    background-color: var(--stone100);
+    margin: 0;
+}
+p{
+    font-size: 16px;
+}
+p, li, td, div{
+    color: var(--stone600);
+}
+h1{
+    color: var(--stone900);
+}
+.main{
+    margin: 128px auto 0 auto;
+    max-width: 800px;
+    background-color: white;
+    padding: 48px;
+    border-radius: 12px;
+}
+.image{
+    border-radius: 12px;
+    max-width: 100%;
+}
+.section{
+    background-color: var(--rose50);
+    border-radius: 12px;
+    padding: 32px;
+}
+ul{
+    margin: 0;
+    padding-left: 24px;
+}
+li{
+    padding-left: 32px;
+    margin-top: 12px;
+}
+.section > h3{
+    margin-top: 0;
+    color: var(--rose800)
+}
+.bold{
+    font-weight: 800;
+}
+.brown800{
+    color: var(--brown800);
+}
+.divider{
+    height: 2px;
+    background-color: var(--stone150);
+    margin: 32px auto 32px auto;
+}
+ol li::marker{
+    color: var(--brown800);
+    font-weight: bold;
+}
+ul li::marker{
+    color: var(--brown800);
+}
+.prep-time li::marker{
+    color: var(--rose800);
+}
+.nutrition-table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.nutr-row{
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px var(--stone150) solid;
+}
+.nutr-row:last-child{
+    border: none;
+}
+.nutr-row div{
+    padding-left: 2em;
+}
+
+.attribution {
+    max-width: 800px;
+    font-size: 11px; 
+    text-align: center; 
+    margin: 64px auto 0 auto;
+    background-color: white;
+    border-radius: 16px 16px 0 0;
+    padding: 16px;
+}
+.attribution a {
+    color: var(--brown800);
+}
+.attribution a:hover{
+    text-decoration: none;
+}
+*{
+    --stone100: hsl(30, 54%, 90%);
+    --stone150: hsl(30, 18%, 87%);
+    --stone600: hsl(30, 10%, 34%);
+    --stone900: hsl(24, 5%, 18%);
+
+    --brown800: hsl(14, 45%, 36%);
+
+    --rose800: hsl(332, 51%, 32%);
+    --rose50: hsl(330, 100%, 98%);
+}
+
+@media(max-width: 480px){
+    .main{
+        margin-top: 32px;
+    }
+}
